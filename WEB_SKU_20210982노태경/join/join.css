@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  
+  body {
+    background-color: #111;
+    background-image: url('/image/sign_background.jpg'); /* 배경 이미지로 교체 */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .riot-logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .left-panel h1 {
+    font-size: 3rem;
+    margin-top: 120px;
+  }
+  
+  .footer {
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+  
+  .footer a {
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  .right-panel {
+    background-color: white;
+    color: black;
+  
+    width: 500px;
+    max-width: 90%;
+    margin: 20px auto; /* 상하 여백 추가해서 꽉 차지 않게 */
+    padding: 60px 40px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50px); /* 중앙 정렬 유지용 */
+  }
+  
+  
+  .signup-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .tip {
+    font-size: 0.85rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .submit-btn {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 30px;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: red;
+    color: white; /* 글자색도 대비 위해 바꿈 */
+  }

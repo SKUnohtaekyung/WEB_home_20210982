@@ -1,0 +1,55 @@
+<!-- join.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회원가입</title>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.5/dist/purify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="join.css" />
+  <script src="join.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <img src="/image/riot_logo_circle.png" alt="라이엇 로고" class="riot-logo" />
+      <h1>라이엇 계정 생성</h1>
+      <footer class="footer">
+        <a>고객센터</a> · 
+        <a>게임정보 처리방침</a> · 
+        <a>서비스 약관</a>
+        <p>&copy; 20210982_NohTaeKyung.</p>
+        <p>v3.13.13</p>
+      </footer>
+    </div>
+
+    <div class="right-panel">
+      <form class="signup-form">
+        <h2>회원정보 입력</h2>
+
+        <label for="nickname">사용자 이름</label>
+        <input type="text" id="nickname" placeholder="플레이어 이름 또는 닉네임" />
+        <p class="tip">ℹ️ 게임 내에서 보여질 이름을 입력해주세요.</p>
+
+        <label for="username">아이디</label>
+        <input type="text" id="username" placeholder="아이디" />
+        <p class="tip">ℹ️ 이메일 형식의 최소 5글자 이상 작성해주세요.</p>
+
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" placeholder="비밀번호" />
+        <p class="tip">ℹ️ 10자리 이상의 영문 대소문자, 특수문자 1개를 포함한 조합을 입력하세요.</p>
+
+        <label for="confirm-password">비밀번호 확인</label>
+        <input type="password" id="confirm-password" placeholder="비밀번호 확인" />
+
+
+      
+        <button type="submit" class="submit-btn">→</button>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>
